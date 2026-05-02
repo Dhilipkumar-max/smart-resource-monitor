@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Configuration
-    // Change this to your Railway app URL for production, e.g., 'https://your-app-production.up.railway.app/api'
-    const API_BASE = 'http://localhost:5000/api';
+    // Connecting to the live Railway production backend
+    const API_BASE = 'https://smart-resource-monitor-production.up.railway.app/api';
     const UPDATE_INTERVAL = 2000; // 2 seconds
     const CHART_MAX_POINTS = 30; // Last 60 seconds
 
