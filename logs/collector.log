@@ -1,0 +1,153 @@
+2026-02-16 16:24:24,050 - INFO - package: mysql.connector.plugins
+2026-02-16 16:24:24,051 - INFO - plugin_name: caching_sha2_password
+2026-02-16 16:24:24,073 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-02-16 16:24:24,076 - INFO - Database connection established
+2026-02-16 16:24:24,076 - INFO - Starting monitoring (interval: 2s)
+2026-02-16 16:24:25,079 - INFO - System: CPU=59.6%, Mem=59.1%
+2026-02-16 16:24:44,722 - INFO - Collected metrics for 151 apps
+2026-02-16 16:24:44,790 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:24:47,833 - INFO - System: CPU=23.3%, Mem=64.6%
+2026-02-16 16:24:56,283 - INFO - Collected metrics for 158 apps
+2026-02-16 16:24:56,299 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:24:59,310 - INFO - System: CPU=21.1%, Mem=65.3%
+2026-02-16 16:25:07,079 - INFO - Collected metrics for 155 apps
+2026-02-16 16:25:07,221 - INFO - Saved data. System ID: 866
+2026-02-16 16:25:10,224 - INFO - System: CPU=15.3%, Mem=66.1%
+2026-02-16 16:25:14,396 - INFO - Collected metrics for 155 apps
+2026-02-16 16:25:14,434 - INFO - Saved data. System ID: 867
+2026-02-16 16:25:17,437 - INFO - System: CPU=12.7%, Mem=65.8%
+2026-02-16 16:25:21,751 - INFO - Collected metrics for 155 apps
+2026-02-16 16:25:21,761 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:25:24,768 - INFO - System: CPU=11.9%, Mem=64.7%
+2026-02-16 16:25:29,059 - INFO - Collected metrics for 153 apps
+2026-02-16 16:25:29,109 - INFO - Saved data. System ID: 869
+2026-02-16 16:25:32,111 - INFO - System: CPU=5.9%, Mem=64.4%
+2026-02-16 16:25:36,170 - INFO - Collected metrics for 152 apps
+2026-02-16 16:25:36,207 - INFO - Saved data. System ID: 870
+2026-02-16 16:25:39,209 - INFO - System: CPU=11.1%, Mem=64.5%
+2026-02-16 16:25:43,537 - INFO - Collected metrics for 152 apps
+2026-02-16 16:25:43,570 - INFO - Saved data. System ID: 871
+2026-02-16 16:25:46,572 - INFO - System: CPU=13.5%, Mem=64.6%
+2026-02-16 16:25:51,195 - INFO - Collected metrics for 152 apps
+2026-02-16 16:25:51,232 - INFO - Saved data. System ID: 872
+2026-02-16 16:25:54,234 - INFO - System: CPU=10.6%, Mem=65.0%
+2026-02-16 16:25:58,674 - INFO - Collected metrics for 154 apps
+2026-02-16 16:25:58,708 - INFO - Saved data. System ID: 873
+2026-02-16 16:26:01,710 - INFO - System: CPU=11.7%, Mem=64.9%
+2026-02-16 16:26:06,142 - INFO - Collected metrics for 153 apps
+2026-02-16 16:26:06,177 - INFO - Saved data. System ID: 874
+2026-02-16 16:26:09,178 - INFO - System: CPU=16.0%, Mem=64.8%
+2026-02-16 16:26:13,303 - INFO - Collected metrics for 153 apps
+2026-02-16 16:26:13,338 - INFO - Saved data. System ID: 875
+2026-02-16 16:26:16,342 - INFO - System: CPU=13.8%, Mem=64.8%
+2026-02-16 16:26:20,474 - INFO - Collected metrics for 153 apps
+2026-02-16 16:26:20,498 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 45
+2026-02-16 16:26:23,509 - INFO - System: CPU=13.9%, Mem=64.9%
+2026-02-16 16:26:29,005 - INFO - Collected metrics for 152 apps
+2026-02-16 16:26:29,029 - INFO - Saved data. System ID: 877
+2026-02-16 16:26:32,031 - INFO - System: CPU=22.3%, Mem=64.0%
+2026-02-16 16:26:36,997 - INFO - Collected metrics for 152 apps
+2026-02-16 16:26:37,015 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 32
+2026-02-16 16:26:40,025 - INFO - System: CPU=11.8%, Mem=63.7%
+2026-02-16 16:26:44,384 - INFO - Collected metrics for 152 apps
+2026-02-16 16:26:44,400 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 19
+2026-02-16 16:26:47,413 - INFO - System: CPU=9.5%, Mem=63.4%
+2026-02-16 16:26:52,382 - INFO - Collected metrics for 152 apps
+2026-02-16 16:26:52,419 - INFO - Saved data. System ID: 880
+2026-02-16 16:26:55,421 - INFO - System: CPU=15.2%, Mem=63.4%
+2026-02-16 16:27:00,692 - INFO - Collected metrics for 151 apps
+2026-02-16 16:27:00,729 - INFO - Saved data. System ID: 881
+2026-02-16 16:27:03,731 - INFO - System: CPU=6.5%, Mem=63.3%
+2026-02-16 16:27:09,093 - INFO - Collected metrics for 151 apps
+2026-02-16 16:27:09,151 - INFO - Saved data. System ID: 882
+2026-02-16 16:27:12,153 - INFO - System: CPU=24.0%, Mem=64.2%
+2026-02-16 16:27:21,823 - INFO - Collected metrics for 150 apps
+2026-02-16 16:27:21,851 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 44
+2026-02-16 16:27:24,903 - INFO - System: CPU=32.7%, Mem=67.8%
+2026-02-16 16:27:33,104 - INFO - Collected metrics for 150 apps
+2026-02-16 16:27:33,139 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:27:36,146 - INFO - System: CPU=27.5%, Mem=86.2%
+2026-02-16 16:27:41,545 - INFO - Collected metrics for 152 apps
+2026-02-16 16:27:41,575 - INFO - Saved data. System ID: 885
+2026-02-16 16:27:44,577 - INFO - System: CPU=25.3%, Mem=87.3%
+2026-02-16 16:27:50,303 - INFO - Collected metrics for 152 apps
+2026-02-16 16:27:50,318 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:27:53,324 - INFO - System: CPU=19.4%, Mem=87.1%
+2026-02-16 16:27:58,901 - INFO - Collected metrics for 151 apps
+2026-02-16 16:27:58,935 - INFO - Saved data. System ID: 887
+2026-02-16 16:28:01,964 - INFO - System: CPU=17.6%, Mem=87.2%
+2026-02-16 16:28:07,194 - INFO - Collected metrics for 153 apps
+2026-02-16 16:28:07,227 - INFO - Saved data. System ID: 888
+2026-02-16 16:28:10,231 - INFO - System: CPU=12.1%, Mem=87.1%
+2026-02-16 16:28:14,842 - INFO - Collected metrics for 153 apps
+2026-02-16 16:28:14,874 - INFO - Saved data. System ID: 889
+2026-02-16 16:28:17,876 - INFO - System: CPU=14.3%, Mem=87.4%
+2026-02-16 16:28:22,476 - INFO - Collected metrics for 153 apps
+2026-02-16 16:28:22,512 - INFO - Saved data. System ID: 890
+2026-02-16 16:28:25,516 - INFO - System: CPU=14.4%, Mem=87.2%
+2026-02-16 16:28:30,275 - INFO - Collected metrics for 153 apps
+2026-02-16 16:28:30,326 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 89
+2026-02-16 16:28:33,334 - INFO - System: CPU=11.6%, Mem=86.8%
+2026-02-16 16:28:38,112 - INFO - Collected metrics for 153 apps
+2026-02-16 16:28:38,149 - INFO - Saved data. System ID: 892
+2026-02-16 16:28:41,151 - INFO - System: CPU=13.2%, Mem=63.5%
+2026-02-16 16:28:45,740 - INFO - Collected metrics for 151 apps
+2026-02-16 16:28:45,774 - INFO - Saved data. System ID: 893
+2026-02-16 16:28:48,776 - INFO - System: CPU=14.3%, Mem=63.6%
+2026-02-16 16:28:53,398 - INFO - Collected metrics for 151 apps
+2026-02-16 16:28:53,434 - INFO - Saved data. System ID: 894
+2026-02-16 16:28:56,436 - INFO - System: CPU=12.6%, Mem=63.3%
+2026-02-16 16:29:00,902 - INFO - Collected metrics for 151 apps
+2026-02-16 16:29:00,933 - INFO - Saved data. System ID: 895
+2026-02-16 16:29:03,961 - INFO - System: CPU=11.3%, Mem=63.3%
+2026-02-16 16:29:08,448 - INFO - Collected metrics for 151 apps
+2026-02-16 16:29:08,471 - INFO - Saved data. System ID: 896
+2026-02-16 16:29:11,473 - INFO - System: CPU=18.4%, Mem=63.4%
+2026-02-16 16:29:17,257 - INFO - Collected metrics for 153 apps
+2026-02-16 16:29:17,279 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 34
+2026-02-16 16:29:20,289 - INFO - System: CPU=12.9%, Mem=63.8%
+2026-02-16 16:29:24,774 - INFO - Collected metrics for 152 apps
+2026-02-16 16:29:24,799 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 59
+2026-02-16 16:29:27,810 - INFO - System: CPU=11.7%, Mem=63.8%
+2026-02-16 16:29:32,396 - INFO - Collected metrics for 152 apps
+2026-02-16 16:29:32,432 - INFO - Saved data. System ID: 899
+2026-02-16 16:29:35,434 - INFO - System: CPU=12.2%, Mem=63.7%
+2026-02-16 16:29:39,793 - INFO - Collected metrics for 151 apps
+2026-02-16 16:29:39,823 - INFO - Saved data. System ID: 900
+2026-02-16 16:29:42,826 - INFO - System: CPU=7.7%, Mem=63.9%
+2026-02-16 16:29:47,296 - INFO - Collected metrics for 152 apps
+2026-02-16 16:29:47,327 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 70
+2026-02-16 16:29:50,338 - INFO - System: CPU=8.0%, Mem=63.6%
+2026-02-16 16:29:54,674 - INFO - Collected metrics for 151 apps
+2026-02-16 16:29:54,701 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 46
+2026-02-16 16:29:57,712 - INFO - System: CPU=13.9%, Mem=63.6%
+2026-02-16 16:30:03,154 - INFO - Collected metrics for 151 apps
+2026-02-16 16:30:03,191 - INFO - Saved data. System ID: 903
+2026-02-16 16:30:06,193 - INFO - System: CPU=22.5%, Mem=63.9%
+2026-02-16 16:30:11,249 - INFO - Collected metrics for 152 apps
+2026-02-16 16:30:11,259 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:30:14,269 - INFO - System: CPU=23.5%, Mem=63.4%
+2026-02-16 16:30:19,002 - INFO - Collected metrics for 150 apps
+2026-02-16 16:30:19,039 - INFO - Saved data. System ID: 905
+2026-02-16 16:30:22,042 - INFO - System: CPU=11.6%, Mem=63.4%
+2026-02-16 16:30:27,704 - INFO - Collected metrics for 149 apps
+2026-02-16 16:30:27,738 - INFO - Saved data. System ID: 906
+2026-02-16 16:30:30,740 - INFO - System: CPU=15.2%, Mem=63.4%
+2026-02-16 16:30:35,114 - INFO - Collected metrics for 149 apps
+2026-02-16 16:30:35,146 - INFO - Saved data. System ID: 907
+2026-02-16 16:30:38,150 - INFO - System: CPU=40.7%, Mem=63.9%
+2026-02-16 16:30:43,319 - INFO - Collected metrics for 150 apps
+2026-02-16 16:30:43,398 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:30:46,410 - INFO - System: CPU=23.5%, Mem=65.0%
+2026-02-16 16:30:51,022 - INFO - Collected metrics for 149 apps
+2026-02-16 16:30:51,059 - INFO - Saved data. System ID: 909
+2026-02-16 16:30:54,061 - INFO - System: CPU=11.9%, Mem=64.0%
+2026-02-16 16:30:58,357 - INFO - Collected metrics for 149 apps
+2026-02-16 16:30:58,370 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 1
+2026-02-16 16:31:01,380 - INFO - System: CPU=10.3%, Mem=63.8%
+2026-02-16 16:31:05,634 - INFO - Collected metrics for 148 apps
+2026-02-16 16:31:05,674 - INFO - Saved data. System ID: 911
+2026-02-16 16:31:08,676 - INFO - System: CPU=7.3%, Mem=63.9%
+2026-02-16 16:31:12,691 - INFO - Collected metrics for 148 apps
+2026-02-16 16:31:12,706 - ERROR - Database error: 1264 (22003): Out of range value for column 'cpu_usage' at row 9
+2026-02-16 16:31:15,717 - INFO - System: CPU=22.0%, Mem=63.9%

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Health Monitor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="brand">
+                <i class="fa-solid fa-laptop-medical"></i>
+                <h1>System Health Monitor</h1>
+            </div>
+            <div class="header-controls">
+                <span id="connection-status" class="status-indicator connected" title="Connected"></span>
+                <button class="icon-btn" id="theme-toggle"><i class="fa-regular fa-sun"></i></button>
+                <button class="icon-btn" onclick="location.reload()"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Left Main Content -->
+            <main class="main-content">
+
+                <!-- Top Stats Row -->
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>System Uptime</span>
+                            <i class="fa-solid fa-clock text-blue"></i>
+                        </div>
+                        <div class="stat-value" id="uptime-display">--d --h --m</div>
+                        <div class="stat-sub text-green"><i class="fa-solid fa-arrow-up"></i> Stable</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>CPU Usage</span>
+                            <i class="fa-solid fa-microchip text-orange"></i>
+                        </div>
+                        <div class="stat-value" id="cpu-stat-val">--%</div>
+                        <div class="stat-sub text-normal">Normal Range</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>Memory Usage</span>
+                            <i class="fa-solid fa-memory text-purple"></i>
+                        </div>
+                        <div class="stat-value" id="mem-stat-val">--%</div>
+                        <div class="stat-sub" id="mem-total-display">-- GB / -- GB</div>
+                    </div>
+
+                    <!-- Placeholder for Network/Processes if we add them later -->
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>Active Apps</span>
+                            <i class="fa-solid fa-layer-group text-pink"></i>
+                        </div>
+                        <div class="stat-value" id="process-count">--</div>
+                        <div class="stat-sub text-orange" id="high-priority-count">-- High Priority</div>
+                    </div>
+                </div>
+
+                <!-- Performance Charts Section -->
+                <div class="charts-section">
+                    <div class="chart-card">
+                        <div class="card-header">
+                            <h3>CPU Usage History</h3>
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="cpuChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="card-header">
+                            <h3>RAM Usage Trend</h3>
+                            <i class="fa-solid fa-chart-area"></i>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="memoryChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Stats Row (Memory Dist & Top Apps) -->
+                <div class="charts-section">
+                    <div class="chart-card">
+                        <div class="card-header">
+                            <div style="display:flex; gap:10px; align-items:center;">
+                                <h3>Memory Distribution History</h3>
+                                <span style="font-size:0.7rem; color:var(--accent-blue);"><i class="fa-solid fa-circle"
+                                        style="font-size:6px"></i> APP</span>
+                                <span style="font-size:0.7rem; color:var(--accent-green);"><i class="fa-solid fa-circle"
+                                        style="font-size:6px"></i> SYSTEM</span>
+                            </div>
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="distChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="card-header">
+                            <h3>Top Resource Intensive Apps</h3>
+                        </div>
+                        <div class="top-apps-list" id="top-apps-list">
+                            <!-- JS Populates this -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Applications Table Section -->
+                <div class="table-section card">
+                    <div class="card-header">
+                        <h3>Running Applications</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Application Name</th>
+                                    <th>CPU % <i class="fa-solid fa-sort"></i></th>
+                                    <th>RAM (MB) <i class="fa-solid fa-sort"></i></th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="app-table-body">
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Sidebar: Insights -->
+            <aside class="insights-sidebar">
+                <div class="section-title">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h2>Smart Insights</h2>
+                </div>
+
+                <!-- Critical Alert Card (Dynamic) -->
+                <div id="recommendations-container">
+                    <!-- Default State -->
+                    <div class="insight-card info">
+                        <div class="insight-header">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <h4>System Normal</h4>
+                        </div>
+                        <p>No critical resource usage detected. Your system is running smoothly.</p>
+                    </div>
+                </div>
+
+                <!-- Optimization Call to Action -->
+                <div class="insight-card action-card" id="top-usage-card">
+                    <div class="insight-header">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h4>Top Resource Consumer</h4>
+                    </div>
+                    <p id="top-usage-content">Analyzing system processes...</p>
+                    <button class="btn-primary">Optimize Workflow <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Static Tip -->
+                <div class="insight-card tip-card">
+                    <div class="icon-circle"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div>
+                        <h4>Pro Tip</h4>
+                        <p>Disabling startup apps can improve boot time by up to 20%.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
